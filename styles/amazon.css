@@ -1,0 +1,481 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.pri-nav {
+  background-color: rgb(19, 25, 33);
+  max-width: 100%;
+  display: flex;
+}
+.first-sec {
+  display: flex;
+  width: 250px;
+  height: 70px;
+  /* background-color: #f59e0b; */
+  margin-left: 10px;
+  padding-top: 3px;
+}
+.first-sec img {
+  padding: 20px;
+  width: 160px;
+  margin-left: 20px;
+}
+.middle-sec {
+  width: 750px;
+}
+.searchbar {
+  width: 100%;
+  padding: 15px;
+  margin-left: 25px;
+}
+
+input[type="search"] {
+  padding: 12px 20px;
+  border: 2px solid transparent; 
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+}
+
+input[type="search"]:focus {
+  border-color: #ffa200;
+  ;
+}
+.third-sec {
+  white-space: nowrap;
+  padding: 25px;
+  margin-left: 50px;
+  width: 150px;
+}
+.third-sec a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+.third-sec a:hover {
+  color: #ffa200;
+  transform: scale(1.1);
+}
+.fourth-sec {
+  width: 200px;
+  padding: 25px;
+  font-size: 20px;
+}
+.fourth-sec a {
+  color: white;
+  text-decoration: none;
+}
+.cart-quantity {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background-color: #f08804;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (width: 1440px) {
+  .third-sec {
+    white-space: nowrap;
+    padding: 25px;
+    padding-left: 120px;
+    width: 150px;
+  }
+  .fourth-sec {
+    white-space: nowrap;
+    width: 200px;
+    padding: 25px;
+    font-size: 20px;
+    padding-left: 120px;
+  }
+  .cart-quantity {
+    top: 12px;
+    right: 30px;
+  }
+}
+@media (max-width: 1400px) {
+  .third-sec {
+    white-space: nowrap;
+    padding: 25px;
+    padding-left: 70px;
+    width: 150px;
+  }
+  .fourth-sec {
+    white-space: nowrap;
+    width: 200px;
+    padding: 25px;
+    font-size: 20px;
+    padding-left: 85px;
+  }
+  .cart-quantity {
+    top: 12px;
+    right: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .first-sec {
+    width: 220px;
+  }
+  .first-sec img {
+    width: 150px;
+    padding: 15px;
+    margin-left: 15px;
+  }
+  .middle-sec {
+    width: 650px;
+    padding-top: 7px;
+  }
+  .third-sec,
+  .fourth-sec {
+    width: 120px;
+    padding-top: 30px;
+    margin-left: 0px;
+    white-space: nowrap;
+  }
+  .third-sec {
+    padding-left: 30px;
+  }
+  .fourth-sec {
+    padding-left: 30px;
+  }
+  input[type="search"] {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .cart-quantity {
+    top: 15px;
+    right: 16px;
+  }
+}
+
+/* Tablet (up to 992px) */
+@media (max-width: 992px) {
+  .pri-nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .first-sec,
+  .third-sec,
+  .fourth-sec {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .first-sec {
+    height: auto;
+    margin-right: 0px;
+  }
+  .first-sec img {
+    margin: 0 auto;
+    width: 120px;
+    padding: 10px;
+  }
+  .middle-sec {
+    /* display: none; */
+    padding: 0 20px;
+  }
+  .searchbar {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 220px;
+  }
+  .third-sec,
+  .fourth-sec {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+}
+@media (width: 768px) {
+  .cart-quantity {
+    top: 15px;
+    right: 28px;
+  }
+}
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .pri-nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 5px;
+  }
+  .first-sec {
+    width: 20%;
+    margin-right: 200px;
+  }
+  .first-sec img {
+    width: 100px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .middle-sec {
+    display: none;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .searchbar {
+    width: 100%;
+    margin: 0 auto;
+  }
+  input[type="search"] {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .third-sec,
+  .fourth-sec {
+    width: 35%;
+    padding: 10px 0;
+  }
+  .third-sec a {
+    font-size: 15px;
+  }
+  .fourth-sec {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .pri-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-sec {
+    margin-left: 70%;
+    width: 100%;
+  }
+  .first-sec img {
+    width: 120px;
+  }
+  .middle-sec,
+  .third-sec,
+  .fourth-sec {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .pri-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-sec {
+    margin-left: 60%;
+    width: 100%;
+  }
+  .first-sec img {
+    width: 120px;
+  }
+  .middle-sec,
+  .third-sec,
+  .fourth-sec {
+    display: none;
+  }
+}
+@media (width: 425px) {
+  .pri-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-sec {
+    margin-left: 50%;
+    width: 100%;
+  }
+  .first-sec img {
+    width: 130px;
+  }
+
+  .middle-sec,
+  .third-sec,
+  .fourth-sec {
+    display: none;
+  }
+}
+
+/*github code */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.products-grid {
+  display: grid;
+
+  /* - In CSS Grid, 1fr means a column will take up the
+         remaining space in the grid.
+       - If we write 1fr 1fr ... 1fr; 8 times, this will
+         divide the grid into 8 columns, each taking up an
+         equal amount of the space.
+       - repeat(8, 1fr); is a shortcut for repeating "1fr"
+         8 times (instead of typing out "1fr" 8 times).
+         repeat(...) is a special property that works with
+         display: grid; */
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* @media is used to create responsive design (making the
+     website look good on any screen size). This @media
+     means when the screen width is 2000px or less, we
+     will divide the grid into 7 columns instead of 8. */
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+/* This @media means when the screen width is 1600px or
+     less, we will divide the grid into 6 columns. */
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  /* Images will overflow their container by default. To
+      prevent this, we set max-width and max-height to 100%
+      so they stay inside their container. */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.product-rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+select {
+  padding: 4px;
+  border-radius: 25px;
+  font-size: 14px;
+  border-color: #f59e0b;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* At first, the "Added to cart" message will
+       be invisible. Use JavaScript to change the
+       opacity and make it visible. */
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.no-results{
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 20px;
+}
