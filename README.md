@@ -111,7 +111,7 @@ This project uses **Jasmine** for full unit testing.
 
 ## 🌐 Live Demo
 
-👉 **[View Website](YOUR_DEPLOYED_LINK_HERE)**  
+👉 **[View Website](https://amazon-cartt.netlify.app/)**  
 
 ## 📜 License
 
